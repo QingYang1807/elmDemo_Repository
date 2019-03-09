@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+    /* 3 lines */
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@color/blue"
+        android:orientation="vertical">
+        /*first_line ring mine setting*/
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:paddingLeft="15dp"
+                android:src="@mipmap/ring" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5.0"
+                android:layout_gravity="center"
+                android:text="@string/mine"
+                android:textAlignment="center"
+                android:textColor="#FFF"
+                android:textSize="22dp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_weight="1.0"
+                android:src="@mipmap/setting"
+                android:outlineSpotShadowColor="@color/white"/>
+        </LinearLayout>
+
+        /*second_line head_pic user_name super_user right*/
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+            /*head_pic*/
+            <FrameLayout
+                android:layout_width="98dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@mipmap/headpic"
+                    android:layout_gravity="right|center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1.0"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/smallcrown"
+                    android:layout_gravity="right|bottom"
+                    android:paddingRight="0dp"/>
+
+            </FrameLayout>
+
+            /*center_layout user_name and super_user or phone_number*/
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="65dp"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_weight="2.0">
+                /*two lines : up and down*/
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/user_name"
+                        android:textSize="22dp"
+                        android:textColor="@color/white"/>
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/superuser" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:src="@mipmap/phone"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/user_phone_number"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/right1"
+                android:layout_weight="1.0"/>
+
+        </LinearLayout>
+
+    </LinearLayout>/* both up is 3 lines*/
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="1dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1.0"
+            android:layout_gravity="center">
+            /*0.00 yuan*/
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wallet_number"
+                    android:textAlignment="center"
+                    android:textColor="@color/blue"
+                    android:textSize="28dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/a_yuan"
+                    android:textColor="@color/blue"
+                    android:textSize="18dp"
+                    android:paddingTop="10dp"/>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/wallet_name"
+                android:textSize="22dp"
+                android:textColor="@color/black"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1.0"
+            android:layout_gravity="center">
+            /*0.00 yuan*/
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/discounts_number"
+                    android:textAlignment="center"
+                    android:textColor="@color/orange"
+                    android:textSize="28dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/a_ge"
+                    android:textColor="@color/orange"
+                    android:textSize="18dp"
+                    android:paddingTop="10dp"/>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/discounts_name"
+                android:textSize="22dp"
+                android:textColor="@color/black"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1.0"
+            android:layout_gravity="center">
+            /*0.00 yuan*/
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gold_coins_number"
+                    android:textAlignment="center"
+                    android:textColor="@color/oranges"
+                    android:textSize="28dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/a_ge"
+                    android:textColor="@color/oranges"
+                    android:textSize="18dp"
+                    android:paddingTop="10dp"/>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/gold_name"
+                android:textSize="22dp"
+                android:textColor="@color/black"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

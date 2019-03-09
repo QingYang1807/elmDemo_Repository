@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">饿了么</string>
+    <string name="mine">我的</string>
+    <string name="user_name">林清扬</string>
+    <string name="user_phone_number">15274452497</string>
+    <string name="wallet_number">0.00</string>
+    <string name="a_yuan">元</string>
+    <string name="wallet_name">钱包</string>
+    <string name="discounts_number">4</string>
+    <string name="a_ge">个</string>
+    <string name="discounts_name">优惠</string>
+    <string name="gold_coins_number">106</string>
+    <string name="gold_name">金币</string>
+
+</resources>
