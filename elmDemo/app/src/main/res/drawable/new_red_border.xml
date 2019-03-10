@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<selector xmlns:android="http://schemas.android.com/apk/res/android">-->
+    <shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 主体背景颜色值 -->
+    <solid android:color="#FFFFFF" />
+    <!-- 这里是设置为四周 也可以单独设置某个位置为圆角-->
+    <corners android:topLeftRadius="5dp"
+        android:topRightRadius="5dp"
+        android:bottomRightRadius="5dp"
+        android:bottomLeftRadius="5dp"/>
+    <!-- 连框宽度和颜色值 -->
+    <stroke
+        android:width="10dp"
+        android:color="#FF0000" />
+    </shape>
+    <!--<layer-list xmlns:android="http://schemas.android.com/apk/res/android">-->
+        <!--&lt;!&ndash; 连框颜色值 &ndash;&gt;-->
+        <!--<item>-->
+            <!--<shape>-->
+                <!--<solid android:color="@color/border_gray" />-->
+            <!--</shape>-->
+        <!--</item>-->
+        <!--&lt;!&ndash; 主体背景颜色值 &ndash;&gt;-->
+        <!--<item-->
+            <!--android:bottom="3dp">&lt;!&ndash;设置只有底部有边框&ndash;&gt;-->
+            <!--<shape>-->
+                <!--<solid android:color="@color/white" />-->
+            <!--</shape>-->
+        <!--</item>-->
+    <!--</layer-list>-->
+<!--</selector>-->

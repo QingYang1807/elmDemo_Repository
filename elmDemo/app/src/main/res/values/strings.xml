@@ -11,5 +11,32 @@
     <string name="discounts_name">优惠</string>
     <string name="gold_coins_number">106</string>
     <string name="gold_name">金币</string>
+    <string name="super_members_privilege">超级会员特权</string>
+    <string name="get">获得</string>
+    <string name="bonus_number">6</string>
+    <string name="bonus_xxx">奖励金，可兑无门槛红包</string>
+    <string name="my_collection">我的收藏</string>
+    <string name="my_customer_service">我的客服</string>
+    <string name="new_text">&#160;NEW&#160; </string>
 
+    <string name="hungry_card">饿了么联名卡</string>
+    <string name="hungry_text">免费领百元红包</string>
+
+    <string name="recommended_prize">推荐有奖</string>
+    <string name="recommended_text">10元现金拿不停</string>
+
+    <string name="gold_mall">金币商城</string>
+    <string name="gold_text">0元好物在这里</string>
+
+    <string name="city_agent_application">城市代理申请</string>
+    <string name="city_text">最高6个月免抽佣</string>
+
+    <string name="free_flow">免费流量</string>
+    <string name="free_text">每月最高500M</string>
+    
+    <string name="enterprise_order">企业订餐</string>
+    <string name="join_in_cooperation">加盟合作</string>
+    
+    <string name="company_name">上海拉扎斯信息科技有限公司</string>
+    <string name="business_qualification">营业资质</string>
 </resources>

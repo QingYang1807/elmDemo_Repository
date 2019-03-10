@@ -6,255 +6,705 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity"
-    android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
-    /* 3 lines */
-    <LinearLayout
+    android:background="@color/light_gray">
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="160dp"
-        android:background="@color/blue"
-        android:orientation="vertical">
-        /*first_line ring mine setting*/
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:scrollbars="none">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="10dp"
-                android:layout_height="30dp"
-                android:layout_gravity="center"
-                android:layout_weight="1.0"
-                android:paddingLeft="15dp"
-                android:src="@mipmap/ring" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="5.0"
-                android:layout_gravity="center"
-                android:text="@string/mine"
-                android:textAlignment="center"
-                android:textColor="#FFF"
-                android:textSize="22dp" />
-
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="30dp"
-                android:layout_weight="1.0"
-                android:src="@mipmap/setting"
-                android:outlineSpotShadowColor="@color/white"/>
-        </LinearLayout>
-
-        /*second_line head_pic user_name super_user right*/
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="65dp"
-            android:layout_marginTop="25dp"
-            android:orientation="horizontal">
-            /*head_pic*/
-            <FrameLayout
-                android:layout_width="98dp"
-                android:layout_height="wrap_content">
-                <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:src="@mipmap/headpic"
-                    android:layout_gravity="right|center"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="15dp"
-                    android:layout_weight="1.0"/>
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="25dp"
-                    android:src="@mipmap/smallcrown"
-                    android:layout_gravity="right|bottom"
-                    android:paddingRight="0dp"/>
-
-            </FrameLayout>
-
-            /*center_layout user_name and super_user or phone_number*/
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            /* first line include 3 lines top + midium + bottom*/
             <LinearLayout
-                android:layout_width="220dp"
-                android:layout_height="65dp"
-                android:orientation="vertical"
-                android:layout_gravity="center"
-                android:layout_marginTop="8dp"
-                android:layout_weight="2.0">
-                /*two lines : up and down*/
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@color/blue"
+                android:orientation="vertical">
+                /*first_line ring mine setting*/
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="left">
+                    android:layout_marginTop="25dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.0"
+                        android:paddingLeft="15dp"
+                        android:src="@drawable/ring" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="5.0"
                         android:layout_gravity="center"
-                        android:text="@string/user_name"
-                        android:textSize="22dp"
-                        android:textColor="@color/white"/>
+                        android:text="@string/mine"
+                        android:textAlignment="center"
+                        android:textColor="#FFF"
+                        android:textSize="22dp" />
 
                     <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="20dp"
+                        android:layout_width="20dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1.0"
+                        android:src="@drawable/setting"
+                        android:outlineSpotShadowColor="@color/white"/>
+                </LinearLayout>
+
+                /*second_line head_pic user_name super_user right*/
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="25dp"
+                    android:orientation="horizontal">
+                    /*head_pic*/
+                    <FrameLayout
+                        android:layout_width="98dp"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/headpic"
+                            android:layout_gravity="right|center"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="1.0"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:src="@drawable/smallcrown"
+                            android:layout_gravity="right|bottom"
+                            android:paddingRight="0dp"/>
+
+                    </FrameLayout>
+
+                    /*center_layout user_name and super_user or phone_number*/
+                    <LinearLayout
+                        android:layout_width="220dp"
+                        android:layout_height="65dp"
+                        android:orientation="vertical"
                         android:layout_gravity="center"
-                        android:src="@mipmap/superuser" />
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="2.0">
+                        /*two lines : up and down*/
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="@string/user_name"
+                                android:textSize="22dp"
+                                android:textColor="@color/white"/>
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/superuser" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:src="@drawable/phone"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/user_phone_number"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/right1"
+                        android:layout_weight="1.0"/>
 
                 </LinearLayout>
+
+            </LinearLayout>/* both up is 3 lines*/
+            /* second line  wallet\discounts\gold coins*/
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:background="@drawable/border_bottom"
+                android:baselineAligned="false">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1.0"
+                    android:layout_gravity="center">
+                    /*0.00 yuan*/
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/wallet_number"
+                            android:textAlignment="center"
+                            android:textColor="@color/blue"
+                            android:textSize="28dp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/a_yuan"
+                            android:textColor="@color/blue"
+                            android:textSize="18dp"
+                            android:paddingTop="10dp"/>
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/wallet_name"
+                        android:textSize="22dp"
+                        android:textColor="@color/black"
+                        android:textAlignment="center"
+                        android:paddingTop="4dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1.0"
+                    android:layout_gravity="center"
+                    android:background="@drawable/border_left_bottom">
+                    /*0.00 yuan*/
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/discounts_number"
+                            android:textAlignment="center"
+                            android:textColor="@color/orange"
+                            android:textSize="28dp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/a_ge"
+                            android:textColor="@color/orange"
+                            android:textSize="18dp"
+                            android:paddingTop="10dp"/>
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/discounts_name"
+                        android:textSize="22dp"
+                        android:textColor="@color/black"
+                        android:textAlignment="center"
+                        android:paddingTop="4dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1.0"
+                    android:layout_gravity="center"
+                    android:background="@drawable/border_left_bottom">
+                    /*0.00 yuan*/
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/gold_coins_number"
+                            android:textAlignment="center"
+                            android:textColor="@color/oranges"
+                            android:textSize="28dp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/a_ge"
+                            android:textColor="@color/oranges"
+                            android:textSize="18dp"
+                            android:paddingTop="10dp"/>
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/gold_name"
+                        android:textSize="22dp"
+                        android:textColor="@color/black"
+                        android:textAlignment="center"
+                        android:paddingTop="4dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            /* third line */
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:src="@drawable/crown" />
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="left">
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="20dp"
-                        android:src="@mipmap/phone"/>
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_weight="1.0">
 
                     <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="@string/user_phone_number"
-                        android:textColor="@color/white" />
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:text="@string/super_members_privilege"
+                        android:textColor="@color/deep_gray" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/get"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/bonus_number"
+                            android:textColor="@color/bonus_color" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/a_ge"
+                            android:textColor="@color/bonus_color" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/bonus_xxx"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                    /*get 6 bonus golds .... this line */
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/right"
+                    android:layout_marginRight="23dp"/>
+            </LinearLayout>
+            /*my collections and my customs service*/
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_marginTop="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp">
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/love"/>
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="5.0"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="19dp"
+                        android:textColor="@color/black"
+                        android:text="@string/my_collection"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"/>
+                    <ImageView
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/right"
+                        android:layout_marginRight="23dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/customer_service" />
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="5.0"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="19dp"
+                        android:textColor="@color/black"
+                        android:text="@string/my_customer_service" />
+
+                    <ImageView
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/right"
+                        android:layout_marginRight="23dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            /**/
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_marginTop="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp">
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/love"/>
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.0"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="19dp"
+                        android:textColor="@color/black"
+                        android:text="@string/hungry_card"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/new_text"
+                            android:background="@drawable/new_red_border"
+                            android:textColor="@color/white"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:text="@string/hungry_text"/>
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/right"
+                        android:layout_marginRight="23dp"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/recommended_prize_img" />
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.0"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="19dp"
+                        android:textColor="@color/black"
+                        android:text="@string/recommended_prize" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:text="@string/recommended_text"/>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/right"
+                        android:layout_marginRight="23dp"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp">
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/gold_mall"/>
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.0"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="19dp"
+                        android:textColor="@color/black"
+                        android:text="@string/gold_mall"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:text="@string/gold_text"/>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="23dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/right"
+                        android:layout_marginRight="23dp"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp">
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/love"/>
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.0"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="19dp"
+                        android:textColor="@color/black"
+                        android:text="@string/city_agent_application"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/new_text"
+                            android:background="@drawable/new_red_border"
+                            android:textColor="@color/white"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:text="@string/city_text"/>
+
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/right"
+                        android:layout_marginRight="23dp"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp">
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/love"/>
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.0"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="19dp"
+                        android:textColor="@color/black"
+                        android:text="@string/free_flow"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:text="@string/free_text"/>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/right"
+                        android:layout_marginRight="23dp"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp">
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/love"/>
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.0"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="19dp"
+                        android:textColor="@color/black"
+                        android:text="@string/enterprise_order"/>
+                    <ImageView
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/right"
+                        android:layout_marginRight="23dp"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp">
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/join_in_cooperation_img"/>
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.0"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="19dp"
+                        android:textColor="@color/black"
+                        android:text="@string/join_in_cooperation"/>
+                    <ImageView
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/right"
+                        android:layout_marginRight="23dp"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="vertical"
+                    android:background="@color/light_gray"
+                    android:paddingTop="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/deep_gray"
+                        android:text="@string/company_name"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:textAlignment="center"
+                        android:text="@string/business_qualification"
+                        android:textColor="@color/business_qualification_color"/>
                 </LinearLayout>
 
             </LinearLayout>
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="25dp"
-                android:layout_gravity="center"
-                android:src="@mipmap/right1"
-                android:layout_weight="1.0"/>
-
         </LinearLayout>
-
-    </LinearLayout>/* both up is 3 lines*/
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:orientation="horizontal"
-        android:layout_marginBottom="1dp">
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_weight="1.0"
-            android:layout_gravity="center">
-            /*0.00 yuan*/
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_gravity="center">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/wallet_number"
-                    android:textAlignment="center"
-                    android:textColor="@color/blue"
-                    android:textSize="28dp"
-                    android:textStyle="bold" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="@string/a_yuan"
-                    android:textColor="@color/blue"
-                    android:textSize="18dp"
-                    android:paddingTop="10dp"/>
-
-            </LinearLayout>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/wallet_name"
-                android:textSize="22dp"
-                android:textColor="@color/black"
-                android:textAlignment="center"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_weight="1.0"
-            android:layout_gravity="center">
-            /*0.00 yuan*/
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_gravity="center">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/discounts_number"
-                    android:textAlignment="center"
-                    android:textColor="@color/orange"
-                    android:textSize="28dp"
-                    android:textStyle="bold" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="@string/a_ge"
-                    android:textColor="@color/orange"
-                    android:textSize="18dp"
-                    android:paddingTop="10dp"/>
-
-            </LinearLayout>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/discounts_name"
-                android:textSize="22dp"
-                android:textColor="@color/black"
-                android:textAlignment="center"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_weight="1.0"
-            android:layout_gravity="center">
-            /*0.00 yuan*/
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_gravity="center">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/gold_coins_number"
-                    android:textAlignment="center"
-                    android:textColor="@color/oranges"
-                    android:textSize="28dp"
-                    android:textStyle="bold" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="@string/a_ge"
-                    android:textColor="@color/oranges"
-                    android:textSize="18dp"
-                    android:paddingTop="10dp"/>
-
-            </LinearLayout>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/gold_name"
-                android:textSize="22dp"
-                android:textColor="@color/black"
-                android:textAlignment="center"/>
-        </LinearLayout>
-
-    </LinearLayout>
-
-
-
-
+    </ScrollView>
 </LinearLayout>
